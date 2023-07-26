@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="cupcake">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    
+
     <title>Fruit Burst</title>
-    
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- tailwind css and daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- tailwind customization script -->
     <script>
-            tailwind.config = {
-    theme: {
-        extend: {
-        colors: {
-            primary: '#F85559',
-            sec: '#121212',
-            pera: '#121212CC',
-        },
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F85559',
+                        sec: '#121212',
+                        pera: '#121212CC',
+                    },
 
-        backgroundImage: {
-        'banner1': "url('/images/banner1.png')",
-        'banner2': "url('/images/banner2.png')",
-        'banner3': "url('/images/banner3.png')",
-        'banner4': "url('/images/banner4.png')",
-        'footer-texture': "url('/img/footer-texture.png')",
-        },
-    }
-    }
-    }
+                    backgroundImage: {
+                        'banner1': "url('/images/banner1.png')",
+                        'banner2': "url('/images/banner2.png')",
+                        'banner3': "url('/images/banner3.png')",
+                        'banner4': "url('/images/banner4.png')",
+                        'footer-texture': "url('/img/footer-texture.png')",
+                    },
+                }
+            }
+        }
     </script>
-    
+
     <!-- internal css -->
     <style>
         .font-lato {
@@ -52,18 +55,21 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .img2 {
             background: url('./images/banner2.png'), linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
             background-blend-mode: overlay;
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .img3 {
             background: url('./images/banner3.png'), linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
             background-blend-mode: overlay;
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .img4 {
             background: url('./images/banner4.png'), linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
             background-blend-mode: overlay;
@@ -83,27 +89,28 @@
         }
     </style>
 
-    
+
 </head>
+
 <body class="font-lato">
     <!-- header section -->
     <header class="max-w-6xl mx-auto">
-        <!-- nav section -->
-        <nav class="mt-5">
-            <!-- daisy khala's nav -->
 
-            <!-- menus -->
+        <nav class="mt-5">
+            <!-- daisy ui nav -->
+
+            <!-- menu -->
             <div class="navbar text-black md:bg-primary rounded-[600px] items-center flex-1 max-h-20">
                 <div class="navbar-center p-4 flex-1 flex-nowrap hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-white text-lg font-medium">
-                      <li><a>Home</a></li>
-                      <li><a>About Us</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>All Fruits</a></li>
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>All Fruits</a></li>
                     </ul>
                 </div>
 
-                <!-- logo -->
+
                 <div class="flex-1 p-4">
                     <a class="">
                         <div class="flex justify-center items-center gap-2">
@@ -113,12 +120,13 @@
                     </a>
                 </div>
 
-                <!-- search box -->
+
                 <div class="navbar-center hidden md:flex">
-                    <input type="text" placeholder="Search" class="input input-bordered w-24 px-5 py-4 mr-4 md:w-80 md:h-10" />
+                    <input type="text" placeholder="Search"
+                        class="input input-bordered w-24 px-5 py-4 mr-4 md:w-80 md:h-10" />
                 </div>
 
-                <!-- Hamburger Menu -->
+
                 <nav class="flex items-center lg:hidden">
                     <div class="navbar-end">
                         <div class="dropdown ">
@@ -127,14 +135,17 @@
                                 <span class="block h-1 w-6 rounded bg-black mt-1"></span>
                                 <span class="block h-1 w-6 rounded bg-black mt-1"></span>
                             </button>
-                          <ul tabindex="0" class="menu menu-sm dropdown-content right-0 w-[200px] top-16 mt-3 z-[1] p-2 shadow bg-base-100">
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
-                            <li><a href=""><!-- search box -->
-                                <input type="text" placeholder="Search" class="input md:hidden input-bordered w-24 px-5 py-4 mr-4 md:w-80 md:h-10" /></a></li>
-                          </ul>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content right-0 w-[200px] top-16 mt-3 z-[1] p-2 shadow bg-base-100">
+                                <li><a>Home</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>All Fruits</a></li>
+                                <li><a href="">
+                                        <input type="text" placeholder="Search"
+                                            class="input md:hidden input-bordered w-24 px-5 py-4 mr-4 md:w-80 md:h-10" /></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </nav>
@@ -143,87 +154,93 @@
 
         <!-- banner section -->
         <section class="mt-5">
-            <!-- daisy khala's carousel -->
+            <!-- daisy ui carousel -->
             <div class="carousel w-full">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full img1 lg:h-[75vh]">
-                    <!-- content -->
+
                     <div class="flex text-center justify-center items-center text-white w-4/5 mx-auto p-20">
                         <div class="space-y-4">
                             <h4 class="text-7xl font-extrabold">Exotic tastes at your doorstep</h4>
-                            <p class="text-xl font-medium">
-                                We supply highly quality organic products
+                            <p class="text-2xl font-medium">
+                                GET NOW!!
                             </p>
-                            <button class="btn bg-primary text-white rounded-lg border-none w-48 md:w-32">Shop Now</button>
+                            <button class="btn bg-primary text-white rounded-lg border-none w-48 md:w-32">Shop
+                                Now</button>
                         </div>
                     </div>
-                  
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❮</a> 
-                    <a href="#slide2" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❯</a>
-                  </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❯</a>
+                    </div>
                 </div>
 
                 <!-- slide 2 -->
                 <div id="slide2" class="carousel-item relative w-full img2 lg:h-[75vh]">
-                  <!-- content -->
-                  <div class="flex text-center justify-center items-center text-white w-4/5 mx-auto p-20">
-                    <div class="space-y-4">
-                        <h4 class="text-7xl font-extrabold">Exotic tastes at your doorstep</h4>
-                        <p class="text-xl font-medium">
-                            We supply highly quality organic products
-                        </p>
-                        <button class="btn bg-primary text-white rounded-lg border-none w-48 md:w-32">Shop Now</button>
+                    <!-- content -->
+                    <div class="flex text-center justify-center items-center text-white w-4/5 mx-auto p-20">
+                        <div class="space-y-4">
+                            <h4 class="text-7xl font-extrabold">Get Organic Fruits at home</h4>
+                            <p class="text-2xl font-medium">
+                                GET NOW!!
+                            </p>
+
+                            <button class="btn bg-primary text-white rounded-lg border-none w-48 md:w-32">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❯</a>
                     </div>
                 </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❮</a> 
-                    <a href="#slide3" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❯</a>
-                  </div>
-                </div> 
 
                 <!-- slide 3 -->
                 <div id="slide3" class="carousel-item relative w-full img3 lg:h-[75vh]">
                     <!-- content -->
                     <div class="flex text-center justify-center items-center text-white w-4/5 mx-auto p-20">
-                    <div class="space-y-4">
-                        <h4 class="text-7xl font-extrabold">Exotic tastes at your doorstep</h4>
-                        <p class="text-xl font-medium">
-                            We supply highly quality organic products
-                        </p>
-                        <button class="btn bg-primary text-white rounded-lg border-none w-48 md:w-32">Shop Now</button>
+                        <div class="space-y-4">
+                            <h4 class="text-7xl font-extrabold">Mouthwatering tastes</h4>
+                            <p class="text-2xl font-medium">
+                                GET NOW!!
+                            </p>
+                            <button class="btn bg-primary text-white rounded-lg border-none w-48 md:w-32">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❯</a>
                     </div>
                 </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❮</a> 
-                    <a href="#slide4" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❯</a>
-                  </div>
-                </div> 
 
                 <!-- slide 4 -->
                 <div id="slide4" class="carousel-item relative w-full img4 lg:h-[75vh]">
-                  <!-- content -->
-                  <div class="flex text-center justify-center items-center text-white w-4/5 mx-auto p-20">
-                    <div class="space-y-4">
-                        <h4 class="text-7xl font-extrabold">Exotic tastes at your doorstep</h4>
-                        <p class="text-xl font-medium">
-                            We supply highly quality organic products
-                        </p>
-                        <button class="btn bg-primary text-white rounded-lg border-none w-48 md:w-32">Shop Now</button>
+                    <!-- content -->
+                    <div class="flex text-center justify-center items-center text-white w-4/5 mx-auto p-20">
+                        <div class="space-y-4">
+                            <h4 class="text-7xl font-extrabold">Get your cravings done by us</h4>
+                            <p class="text-2xl font-medium">
+                                GET NOW!!
+                            </p>
+                            <button class="btn bg-primary text-white rounded-lg border-none w-48 md:w-32">Shop
+                                Now</button>
+                        </div>
                     </div>
-                </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❮</a> 
-                    <a href="#slide1" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❯</a>
-                  </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-sec border-none text-white hover:text-sec">❯</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="relative hidden lg:flex justify-around items-center text-center bg-white w-3/4 mx-auto bottom-20 rounded-lg box-shadow p-6">
+            <div
+                class="relative hidden lg:flex justify-around items-center text-center bg-white w-3/4 mx-auto bottom-20 rounded-lg box-shadow p-6">
                 <div>
                     <img src="./images/fruit1.png" alt="">
                     <p class="text-xl font-medium text-pera">
-                        Strawberry
+                        Bilberry
                     </p>
                 </div>
                 <div>
@@ -253,12 +270,61 @@
             </div>
         </section>
     </header>
+    <!-- main content section -->
+    <main class="max-w-6xl mx-auto">
+        <!-- hot deal section -->
+        <section class="flex flex-col mb-16">
+            <!-- description and counter -->
+            <div class="flex flex-col justify-between gap-8 p-8 items-center md:flex-row">
+                <div class="flex-1 space-y-4">
+                    <h4 class="text-4xl text-center md:text-left md:text-5xl font-extrabold">Deal of the day</h4>
+                    <p class="text-pera text-center md:text-left leading-8">
+                        Our exclusive fruits that are on sale!!
+                    </p>
+                </div>
 
-   
+                <!-- counter -->
+                <div class="">
+                    <div class="grid grid-flow-col gap-5 text-center capitalize auto-cols-max space-x-0">
+                        <div class="flex flex-col">
+                            <span class="countdown items-center font-extrabold text-2xl md:text-5xl space-x-0">
+                                <span style="--value:29;"></span>
+                                <img src="./images/Frame.svg" alt="">
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown flex  items-center font-extrabold text-2xl md:text-5xl">
+                                <span style="--value:15;"></span>
+                                <img src="./images/Frame.svg" alt="">
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col space-x-0">
+                            <span class="countdown flex  items-center font-extrabold text-2xl md:text-5xl">
+                                <span style="--value:25;"></span>
+                                <img src="./images/Frame.svg" alt="">
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col space-x-0">
+                            <span class="countdown flex  items-center font-extrabold text-2xl md:text-5xl">
+                                <span style="--value:08;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+
 
     <!-- footer section -->
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
